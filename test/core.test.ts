@@ -1,0 +1,1 @@
+import{expect,it}from'vitest';import{decodeFrame}from'../src/index.js';it('decodes',()=>expect(decodeFrame(Uint8Array.from([129,1,65]))?.payload[0]).toBe(65));
